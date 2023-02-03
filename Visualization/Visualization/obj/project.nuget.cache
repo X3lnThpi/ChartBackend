@@ -1,0 +1,18 @@
+{
+  "version": 2,
+  "dgSpecHash": "DmsuirL48sfv2lARnUZtJ3L2DNxZqWXDf5O9Y7BsFa6PTPqOj9U0GAxawf0julCy+8SXTLNpNEMfeyk+0DeGEQ==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\devme\\OneDrive\\Documents\\UnityProjects\\Visualization\\Visualization\\Visualization.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\devme\\.nuget\\packages\\amazon.lambda.apigatewayevents\\2.5.0\\amazon.lambda.apigatewayevents.2.5.0.nupkg.sha512",
+    "C:\\Users\\devme\\.nuget\\packages\\amazon.lambda.core\\2.1.0\\amazon.lambda.core.2.1.0.nupkg.sha512",
+    "C:\\Users\\devme\\.nuget\\packages\\amazon.lambda.serialization.systemtextjson\\2.3.0\\amazon.lambda.serialization.systemtextjson.2.3.0.nupkg.sha512",
+    "C:\\Users\\devme\\.nuget\\packages\\awssdk.core\\3.7.103.24\\awssdk.core.3.7.103.24.nupkg.sha512",
+    "C:\\Users\\devme\\.nuget\\packages\\awssdk.dynamodbv2\\3.7.101.33\\awssdk.dynamodbv2.3.7.101.33.nupkg.sha512",
+    "C:\\Users\\devme\\.nuget\\packages\\newtonsoft.json\\13.0.2\\newtonsoft.json.13.0.2.nupkg.sha512",
+    "C:\\Users\\devme\\.nuget\\packages\\microsoft.netcore.app.runtime.linux-x64\\6.0.13\\microsoft.netcore.app.runtime.linux-x64.6.0.13.nupkg.sha512",
+    "C:\\Users\\devme\\.nuget\\packages\\microsoft.aspnetcore.app.runtime.linux-x64\\6.0.13\\microsoft.aspnetcore.app.runtime.linux-x64.6.0.13.nupkg.sha512",
+    "C:\\Users\\devme\\.nuget\\packages\\microsoft.netcore.app.crossgen2.win-x64\\6.0.13\\microsoft.netcore.app.crossgen2.win-x64.6.0.13.nupkg.sha512"
+  ],
+  "logs": []
+}

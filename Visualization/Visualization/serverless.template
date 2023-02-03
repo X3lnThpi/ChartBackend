@@ -1,0 +1,301 @@
+{
+  "AWSTemplateFormatVersion" : "2010-09-09",
+  "Transform" : "AWS::Serverless-2016-10-31",
+  "Description" : "Starting template for an AWS Serverless Application.",
+  "Parameters" : {
+  },
+  "Resources" : {
+    "GetAllData" : {
+      "Type" : "AWS::Serverless::Function",
+      "Properties": {
+        "Handler": "Visualization::Visualization.Function::GetAllDataAsync",
+        "Runtime": "dotnet6",
+        "CodeUri": "",
+        "Description": "Default function",
+        "MemorySize": 256,
+        "Timeout": 30,
+        "Role": null,
+        "Policies": [ "AWSLambda_FullAccess" ],
+        "Events": {
+          "ProxyResource": {
+            "Type": "Api",
+            "Properties": {
+              "Path": "/GetAllData",
+              "Method": "GET"
+            }
+          }
+        }
+      }
+    },
+    "GetDataByTopicAsync" : {
+      "Type" : "AWS::Serverless::Function",
+      "Properties": {
+        "Handler": "Visualization::Visualization.Function::GetDataByTopicAsync",
+        "Runtime": "dotnet6",
+        "CodeUri": "",
+        "Description": "Default function",
+        "MemorySize": 256, 
+        "Timeout": 30,
+        "Role": null,
+        "Policies": [ "AWSLambda_FullAccess" ],
+        "Events": {
+          "ProxyResource": {
+            "Type": "Api",
+            "Properties": {
+              "Path": "/GetAllTopic",
+              "Method": "GET"
+            }
+          }
+        }
+      }
+    },
+    "GetSectorData" : {
+      "Type" : "AWS::Serverless::Function",
+      "Properties": {
+        "Handler": "Visualization::Visualization.Function::GetSectorData", 
+        "Runtime": "dotnet6",
+        "CodeUri": "",
+        "Description": "Default function",
+        "MemorySize": 256, 
+        "Timeout": 30,
+        "Role": null,
+        "Policies": [ "AWSLambda_FullAccess" ],
+        "Events": {
+          "ProxyResource": {
+            "Type": "Api",
+            "Properties": {
+              "Path": "/AllSectors",
+              "Method": "GET"
+            }
+          }
+         }
+        }
+  },
+  "GetSectorPieData" : {
+      "Type" : "AWS::Serverless::Function",
+      "Properties": {
+        "Handler": "Visualization::Visualization.Function::GetSectorPieData", 
+        "Runtime": "dotnet6",
+        "CodeUri": "",
+        "Description": "Default function",
+        "MemorySize": 256, 
+        "Timeout": 30,
+        "Role": null,
+        "Policies": [ "AWSLambda_FullAccess" ],
+        "Events": {
+          "ProxyResource": {
+            "Type": "Api",
+            "Properties": {
+              "Path": "/SectorPieData",
+              "Method": "GET"
+            }
+          }
+         }
+        }
+  },
+  "GetRelevanceBySector" : {
+      "Type" : "AWS::Serverless::Function",
+      "Properties": {
+        "Handler": "Visualization::Visualization.Function::GetRelevanceBySector", 
+        "Runtime": "dotnet6",
+        "CodeUri": "",
+        "Description": "Default function",
+        "MemorySize": 256, 
+        "Timeout": 30,
+        "Role": null,
+        "Policies": [ "AWSLambda_FullAccess" ],
+        "Events": {
+          "ProxyResource": {
+            "Type": "Api",
+            "Properties": {
+              "Path": "/RelevanceBySector",
+              "Method": "GET"
+            }
+          }
+         }
+        }
+  },
+  "LikelihoodBySector" : {
+      "Type" : "AWS::Serverless::Function",
+      "Properties": {
+        "Handler": "Visualization::Visualization.Function::LikelihoodBySector", 
+        "Runtime": "dotnet6",
+        "CodeUri": "",
+        "Description": "Default function",
+        "MemorySize": 256, 
+        "Timeout": 30,
+        "Role": null,
+        "Policies": [ "AWSLambda_FullAccess" ],
+        "Events": {
+          "ProxyResource": {
+            "Type": "Api",
+            "Properties": {
+              "Path": "/LikelihoodBySector",
+              "Method": "GET"
+            }
+          }
+         }
+        }
+  },
+  "IntensityBySector" : {
+      "Type" : "AWS::Serverless::Function",
+      "Properties": {
+        "Handler": "Visualization::Visualization.Function::IntensityBySector", 
+        "Runtime": "dotnet6",
+        "CodeUri": "",
+        "Description": "Default function",
+        "MemorySize": 256, 
+        "Timeout": 30,
+        "Role": null,
+        "Policies": [ "AWSLambda_FullAccess" ],
+        "Events": {
+          "ProxyResource": {
+            "Type": "Api",
+            "Properties": {
+              "Path": "/IntensityBySector",
+              "Method": "GET"
+            }
+          }
+         }
+        }
+  },
+  "ImpactBySector" : {
+      "Type" : "AWS::Serverless::Function",
+      "Properties": {
+        "Handler": "Visualization::Visualization.Function::ImpactBySector", 
+        "Runtime": "dotnet6",
+        "CodeUri": "",
+        "Description": "Default function",
+        "MemorySize": 256, 
+        "Timeout": 30,
+        "Role": null,
+        "Policies": [ "AWSLambda_FullAccess" ],
+        "Events": {
+          "ProxyResource": {
+            "Type": "Api",
+            "Properties": {
+              "Path": "/ImpactBySector",
+              "Method": "GET"
+            }
+          }
+         }
+        }
+  },
+  "TopicBySector" : {
+      "Type" : "AWS::Serverless::Function",
+      "Properties": {
+        "Handler": "Visualization::Visualization.Function::TopicBySector", 
+        "Runtime": "dotnet6",
+        "CodeUri": "",
+        "Description": "Default function",
+        "MemorySize": 256, 
+        "Timeout": 30,
+        "Role": null,
+        "Policies": [ "AWSLambda_FullAccess" ],
+        "Events": {
+          "ProxyResource": {
+            "Type": "Api",
+            "Properties": {
+              "Path": "/TopicBySector",
+              "Method": "GET"
+            }
+          }
+         }
+        }
+  },
+  "GetFiletredDataByTopicAsync" : {
+      "Type" : "AWS::Serverless::Function",
+      "Properties": {
+        "Handler": "Visualization::Visualization.Function::GetFiletredDataByTopicAsync", 
+        "Runtime": "dotnet6",
+        "CodeUri": "",
+        "Description": "Default function",
+        "MemorySize": 256, 
+        "Timeout": 30,
+        "Role": null,
+        "Policies": [ "AWSLambda_FullAccess" ],
+        "Events": {
+          "ProxyResource": {
+            "Type": "Api",
+            "Properties": {
+              "Path": "/FilteredTopics",
+              "Method": "GET"
+            }
+          }
+         }
+        }
+  },
+  "GetFiletredDataBySectorAsync" : {
+      "Type" : "AWS::Serverless::Function",
+      "Properties": {
+        "Handler": "Visualization::Visualization.Function::GetFiletredDataBySectorAsync", 
+        "Runtime": "dotnet6",
+        "CodeUri": "",
+        "Description": "Default function",
+        "MemorySize": 256, 
+        "Timeout": 30,
+        "Role": null,
+        "Policies": [ "AWSLambda_FullAccess" ],
+        "Events": {
+          "ProxyResource": {
+            "Type": "Api",
+            "Properties": {
+              "Path": "/FilteredSectors",
+              "Method": "GET"
+            }
+          }
+         }
+        }
+  },
+  "GetFiletredDataByPestleAsync" : {
+      "Type" : "AWS::Serverless::Function",
+      "Properties": {
+        "Handler": "Visualization::Visualization.Function::GetFiletredDataByPestleAsync", 
+        "Runtime": "dotnet6",
+        "CodeUri": "",
+        "Description": "Default function",
+        "MemorySize": 256, 
+        "Timeout": 30,
+        "Role": null,
+        "Policies": [ "AWSLambda_FullAccess" ],
+        "Events": {
+          "ProxyResource": {
+            "Type": "Api",
+            "Properties": {
+              "Path": "/FilteredPestles",
+              "Method": "GET"
+            }
+          }
+         }
+        }
+  },
+  "GetFiletredDataBySourceAsync" : {
+      "Type" : "AWS::Serverless::Function",
+      "Properties": {
+        "Handler": "Visualization::Visualization.Function::GetFiletredDataBySourceAsync", 
+        "Runtime": "dotnet6",
+        "CodeUri": "",
+        "Description": "Default function",
+        "MemorySize": 256, 
+        "Timeout": 30,
+        "Role": null,
+        "Policies": [ "AWSLambda_FullAccess" ],
+        "Events": {
+          "ProxyResource": {
+            "Type": "Api",
+            "Properties": {
+              "Path": "/FilteredSources",
+              "Method": "GET"
+            }
+          }
+         }
+        }
+  }
+ },
+  "Outputs" : {
+    "ApiURL" : {
+        "Description" : "API endpoint URL for Prod environment",
+        "Value" : { "Fn::Sub" : "https://${ServerlessRestApi}.execute-api.${AWS::Region}.amazonaws.com/Prod/" }
+    }
+  }
+}

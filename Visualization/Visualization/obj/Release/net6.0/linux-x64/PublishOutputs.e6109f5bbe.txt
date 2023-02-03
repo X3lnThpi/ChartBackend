@@ -1,0 +1,10 @@
+C:\Users\devme\OneDrive\Documents\UnityProjects\Visualization\Visualization\bin\Release\net6.0\publish\Visualization.deps.json
+C:\Users\devme\OneDrive\Documents\UnityProjects\Visualization\Visualization\bin\Release\net6.0\publish\Visualization.runtimeconfig.json
+C:\Users\devme\OneDrive\Documents\UnityProjects\Visualization\Visualization\bin\Release\net6.0\publish\Visualization.pdb
+C:\Users\devme\OneDrive\Documents\UnityProjects\Visualization\Visualization\bin\Release\net6.0\publish\Amazon.Lambda.APIGatewayEvents.dll
+C:\Users\devme\OneDrive\Documents\UnityProjects\Visualization\Visualization\bin\Release\net6.0\publish\Amazon.Lambda.Core.dll
+C:\Users\devme\OneDrive\Documents\UnityProjects\Visualization\Visualization\bin\Release\net6.0\publish\Amazon.Lambda.Serialization.SystemTextJson.dll
+C:\Users\devme\OneDrive\Documents\UnityProjects\Visualization\Visualization\bin\Release\net6.0\publish\AWSSDK.Core.dll
+C:\Users\devme\OneDrive\Documents\UnityProjects\Visualization\Visualization\bin\Release\net6.0\publish\AWSSDK.DynamoDBv2.dll
+C:\Users\devme\OneDrive\Documents\UnityProjects\Visualization\Visualization\bin\Release\net6.0\publish\Newtonsoft.Json.dll
+C:\Users\devme\OneDrive\Documents\UnityProjects\Visualization\Visualization\bin\Release\net6.0\publish\Visualization.dll
