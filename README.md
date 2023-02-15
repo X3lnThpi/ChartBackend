@@ -1,1 +1,2 @@
 # ChartBackend
+This project involves using the .NET AWS Lambda project template in Visual Studio to build an API that retrieves data from Dynamo DB and is accessible through APIGateway. This architecture provides a scalable and cost-effective solution for building APIs that can handle large amounts of data and high levels of traffic. By utilizing these AWS services, I can focus on building the logic for your API and let AWS handle the infrastructure, security, and scalability.
